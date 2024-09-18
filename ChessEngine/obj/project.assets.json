@@ -8,24 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Stevens\\.nuget\\packages\\": {}
+    "C:\\Users\\alexa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stevens\\Desktop\\Chess-Engine\\ChessEngine\\ChessEngine.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Dokumenter\\GitHub\\Chess-Engine\\ChessEngine\\ChessEngine.csproj",
       "projectName": "ChessEngine",
-      "projectPath": "C:\\Users\\Stevens\\Desktop\\Chess-Engine\\ChessEngine\\ChessEngine.csproj",
-      "packagesPath": "C:\\Users\\Stevens\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stevens\\Desktop\\Chess-Engine\\ChessEngine\\obj\\",
+      "projectPath": "C:\\Users\\alexa\\OneDrive\\Dokumenter\\GitHub\\Chess-Engine\\ChessEngine\\ChessEngine.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexa\\OneDrive\\Dokumenter\\GitHub\\Chess-Engine\\ChessEngine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Stevens\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
