@@ -9,11 +9,13 @@ namespace ChessEngine {
         float evaluation = 0;
 
         public static UInt64 whitePawns = 0b0000000011111111000000000000000000000000000000000000000000000000;
+        public static UInt64 blackPawns = 0b0000000000000000000000000000000000000000000000001111111100000000;
 
 
         public static void Main(string[] args)
         {
-            Console.WriteLine(whitePawns);
+            ChessBoard board = new ChessBoard();
+            board.PrintBitboards();
         }
     }
 }
