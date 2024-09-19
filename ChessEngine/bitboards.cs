@@ -46,35 +46,11 @@ public class ChessBoard
         BlackKing = 0x0800000000000000; // e8
 
         // Calculate the bitboards for all pieces, white pieces, black pieces, and empty squares
-        AllPieces = WhitePawns | WhiteKnights | WhiteBishops | WhiteRooks | WhiteQueens | WhiteKing |
-                    BlackPawns | BlackKnights | BlackBishops | BlackRooks | BlackQueens | BlackKing;
-
         WhitePieces = WhitePawns | WhiteKnights | WhiteBishops | WhiteRooks | WhiteQueens | WhiteKing;
         BlackPieces = BlackPawns | BlackKnights | BlackBishops | BlackRooks | BlackQueens | BlackKing;
 
+        AllPieces = WhitePieces | BlackPieces;
+        
         EmptySquares = ~AllPieces;
-    }
-
-    // Method to print the bitboards
-    public void PrintBitboards()
-    {
-        Console.WriteLine("White Pawns: " + Convert.ToString((long)WhitePawns, 2).PadLeft(64, '0'));
-        Console.WriteLine("White Knights: " + Convert.ToString((long)WhiteKnights, 2).PadLeft(64, '0'));
-        Console.WriteLine("White Bishops: " + Convert.ToString((long)WhiteBishops, 2).PadLeft(64, '0'));
-        Console.WriteLine("White Rooks: " + Convert.ToString((long)WhiteRooks, 2).PadLeft(64, '0'));
-        Console.WriteLine("White Queens: " + Convert.ToString((long)WhiteQueens, 2).PadLeft(64, '0'));
-        Console.WriteLine("White King: " + Convert.ToString((long)WhiteKing, 2).PadLeft(64, '0'));
-
-        Console.WriteLine("Black Pawns: " + Convert.ToString((long)BlackPawns, 2).PadLeft(64, '0'));
-        Console.WriteLine("Black Knights: " + Convert.ToString((long)BlackKnights, 2).PadLeft(64, '0'));
-        Console.WriteLine("Black Bishops: " + Convert.ToString((long)BlackBishops, 2).PadLeft(64, '0'));
-        Console.WriteLine("Black Rooks: " + Convert.ToString((long)BlackRooks, 2).PadLeft(64, '0'));
-        Console.WriteLine("Black Queens: " + Convert.ToString((long)BlackQueens, 2).PadLeft(64, '0'));
-        Console.WriteLine("Black King: " + Convert.ToString((long)BlackKing, 2).PadLeft(64, '0'));
-
-        Console.WriteLine("All Pieces: " + Convert.ToString((long)AllPieces, 2).PadLeft(64, '0'));
-        Console.WriteLine("White Pieces: " + Convert.ToString((long)WhitePieces, 2).PadLeft(64, '0'));
-        Console.WriteLine("Black Pieces: " + Convert.ToString((long)BlackPieces, 2).PadLeft(64, '0'));
-        Console.WriteLine("Empty Squares: " + Convert.ToString((long)EmptySquares, 2).PadLeft(64, '0'));
     }
 }
