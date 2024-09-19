@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gIgdv6Dh58E=",
+  "dgSpecHash": "L37+xsCWwM0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexa\\OneDrive\\Dokumenter\\GitHub\\Chess-Engine\\ChessEngine\\ChessEngine.csproj",
+  "projectFilePath": "C:\\Users\\alexa\\source\\repos\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Dokumenter\\GitHub\\Chess-Engine\\ChessEngine\\ChessEngine.csproj",
-      "projectName": "ChessEngine",
-      "projectPath": "C:\\Users\\alexa\\OneDrive\\Dokumenter\\GitHub\\Chess-Engine\\ChessEngine\\ChessEngine.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\source\\repos\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectName": "WinFormsApp1",
+      "projectPath": "C:\\Users\\alexa\\source\\repos\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
       "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexa\\OneDrive\\Dokumenter\\GitHub\\Chess-Engine\\ChessEngine\\obj\\",
+      "outputPath": "C:\\Users\\alexa\\source\\repos\\WinFormsApp1\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections;
+using WinFormsApp1;
 
 namespace ChessEngine {
     public class ChessEngine {
@@ -10,12 +11,14 @@ namespace ChessEngine {
 
         public static void Main(string[] args)
         {
+            ChessRenderer.Start();
+
             ChessBoard board = new ChessBoard();
             board.PrintBitboards();
 
             GetByte(8, board.WhitePawns);
         }
-
+        
         public static byte GetByte(int byteIndex, ulong bytes) {
             return ((long)bytes >> byteIndex) % 2 == 1? (byte)1 : (byte)0;
         }
