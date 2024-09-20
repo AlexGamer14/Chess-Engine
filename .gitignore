@@ -1,2 +1,2 @@
-/ChessEngine/obj
-ChessEngine/bin/
+/ChessEngine/bin/*
+/ChessEngine/obj/*
