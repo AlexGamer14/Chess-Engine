@@ -1,2 +1,51 @@
-/ChessEngine/bin/*
-/ChessEngine/obj/*
+# Visual Studio Code
+.vscode/
+
+# C# and .NET
+*.csproj
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+/bin/
+/obj/
+
+# User-specific files
+*.suo
+*.ntvs*
+*.nupkg
+*.vs/
+*.vscode/
+*.user
+*.userosscache
+
+# NuGet Packages
+packages/
+**/packages/*
+**/packages/
+
+# Azure DevOps
+.vs/
+.vscode/
+.vscode-test/
+TestResults/
+
+# Miscellaneous
+*.cache
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+*.bak
+*.tmp
+*.log
+*.log.*
+*.tmp.*
+*.publishsettings
+*.publishxml
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
