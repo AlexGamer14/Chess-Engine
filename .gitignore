@@ -10,8 +10,8 @@
 *.sln.docstates
 
 # Build results
-/bin/
-/obj/
+/bin/*
+/obj/*
 
 # User-specific files
 *.suo
