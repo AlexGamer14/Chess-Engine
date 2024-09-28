@@ -4,7 +4,7 @@ namespace ChessEngine
     {
         public void MovePiece(ChessBoard board, byte startRow, byte startColumn, byte destinationRow, byte DestinationColumn)
         {
-            Debugging.PrintPieces(board, board.BlackPawns);
+            Debugging.PrintPieces(board.BlackPawns);
         }
 
         private byte RowAndColumnToByte(byte row, byte column)

@@ -27,9 +27,6 @@ namespace ChessEngine
         // Bitboard for all black pieces
         public ulong BlackPieces { get; private set; }
 
-        // Bitboard for empty squares
-        public ulong EmptySquares { get; private set; }
-
         // Initialize the board with the starting position
         public ChessBoard()
         {
@@ -54,8 +51,33 @@ namespace ChessEngine
 
             WhitePieces = WhitePawns | WhiteKnights | WhiteBishops | WhiteRooks | WhiteQueens | WhiteKing;
             BlackPieces = BlackPawns | BlackKnights | BlackBishops | BlackRooks | BlackQueens | BlackKing;
+        }
 
-            EmptySquares = ~AllPieces;
+        public void UpdateBitBoards()
+        {
+            WhitePieces = WhitePawns | WhiteKnights | WhiteBishops | WhiteRooks | WhiteQueens | WhiteKing;
+            BlackPieces = BlackPawns | BlackKnights | BlackBishops | BlackRooks | BlackQueens | BlackKing;
+
+            AllPieces = WhitePieces | BlackPieces;
+        }
+
+        public static ulong SetBit(ulong bitboard, int bitPosition, bool value)
+        {
+            if (bitPosition < 0 || bitPosition >= 64)
+            {
+                throw new ArgumentOutOfRangeException(nameof(bitPosition), "Bit position must be between 0 and 63.");
+            }
+
+            ulong mask = 1UL << bitPosition;
+
+            if (value)
+            {
+                return bitboard | mask;
+            }
+            else
+            {
+                return bitboard & ~mask;
+            }
         }
     }
 }

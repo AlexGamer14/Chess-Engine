@@ -49,3 +49,5 @@ ehthumbs.db
 *.userosscache
 *.suo
 *.sln.docstates
+/ChessEngine/obj
+/ChessEngine/bin
