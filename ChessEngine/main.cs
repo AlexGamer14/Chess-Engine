@@ -1,4 +1,5 @@
-﻿namespace ChessEngine
+﻿using System;
+namespace ChessEngine
 {
     public class ChessEngine
     {
@@ -6,6 +7,7 @@
         public static void Main(string[] args)
         {
             ChessBoard board = new ChessBoard();
+            Evaluation evaluation = new Evaluation();
 
             board.BlackPawns = Mover.MovePiece(board.BlackPawns, 54, 38);
 
@@ -20,6 +22,8 @@
             ChessBoard.SetBit(board.WhitePawns, 10, true);
             Console.WriteLine();
             Debugging.PrintPieces(board.WhitePawns);
+
+            Console.WriteLine(evaluation.Evaluate(board, true));
         }
     }
 }
