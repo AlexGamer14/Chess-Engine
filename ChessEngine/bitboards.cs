@@ -4,28 +4,28 @@ namespace ChessEngine
     public class ChessBoard
     {
         // Bitboards for each piece type
-        public ulong WhitePawns { get; private set; }
-        public ulong WhiteKnights { get; private set; }
-        public ulong WhiteBishops { get; private set; }
-        public ulong WhiteRooks { get; private set; }
-        public ulong WhiteQueens { get; private set; }
-        public ulong WhiteKing { get; private set; }
+        public ulong WhitePawns ;
+        public ulong WhiteKnights ;
+        public ulong WhiteBishops; 
+        public ulong WhiteRooks ;
+        public ulong WhiteQueens; 
+        public ulong WhiteKing ;
 
-        public ulong BlackPawns { get; private set; }
-        public ulong BlackKnights { get; private set; }
-        public ulong BlackBishops { get; private set; }
-        public ulong BlackRooks { get; private set; }
-        public ulong BlackQueens { get; private set; }
-        public ulong BlackKing { get; private set; }
+        public ulong BlackPawns ;
+        public ulong BlackKnights ;
+        public ulong BlackBishops; 
+        public ulong BlackRooks ;
+        public ulong BlackQueens;
+        public ulong BlackKing ;
 
         // Bitboard for all pieces
-        public ulong AllPieces { get; private set; }
+        public ulong AllPieces ;
 
         // Bitboard for all white pieces
-        public ulong WhitePieces { get; private set; }
+        public ulong WhitePieces ;
 
         // Bitboard for all black pieces
-        public ulong BlackPieces { get; private set; }
+        public ulong BlackPieces ;
 
         // Initialize the board with the starting position
         public ChessBoard()

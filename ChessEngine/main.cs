@@ -2,9 +2,12 @@
 {
     public class ChessEngine
     {
+        public static moves Mover = new();
         public static void Main(string[] args)
         {
             ChessBoard board = new ChessBoard();
+
+            Mover.MovePiece(board, 1, 2);
 
             Console.WriteLine(HelperFunctions.GetByte(1, board.AllPieces));
 
