@@ -12,8 +12,10 @@ namespace ChessEngine
         {    
             // 0 = White Pawn, 1 = White Knigth, 2 = White Bishop, 3 = White Rook, 4 = White Queen, 5 = White King
             // 6 = Black Pawn, 7 = Black Knigth, 8 = Black Bishop, 9 = Black Rook, 10 = Black Queen, 11 = Black King
-            switch (pieceType) {
-                
+            switch (pieceType) 
+            {
+                case 1:
+                    break;
             }
 
 
