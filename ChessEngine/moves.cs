@@ -2,7 +2,7 @@ namespace ChessEngine
 {
     public class moves
     {
-        public void MovePiece(ChessBoard board, byte startPosition, byte endPosition)
+        public void MovePiece(ulong pieces, byte startPosition, byte endPosition)
         {
             pieces = pieces & ~(ulong)Math.Pow(2, startPosition);
             pieces = pieces | (ulong)Math.Pow(2, endPosition);
@@ -17,6 +17,7 @@ namespace ChessEngine
                 case 1:
                     break;
             }
+        return false;
 
 
         }
