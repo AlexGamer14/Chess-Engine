@@ -2,10 +2,11 @@ namespace ChessEngine
 {
     public class moves
     {
-        public void MovePiece(ulong pieces, byte startPosition, byte endPosition)
+        public ulong MovePiece(ulong pieces, byte startPosition, byte endPosition)
         {
             pieces = pieces & ~(ulong)Math.Pow(2, startPosition);
             pieces = pieces | (ulong)Math.Pow(2, endPosition);
+            return pieces;
         }
 
         public bool LegalMove(byte pieceType, byte startPosition, byte endPosition)
