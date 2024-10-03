@@ -2,11 +2,11 @@ namespace ChessEngine
 {
     public class moves
     {
-        public void MovePiece(ChessBoard board, byte startPosition, byte endPosition)
+        public void MovePiece(ulong pieces, byte startPosition, byte endPosition)
         {
-            Debugging.PrintPieces(board.BlackPawns);
-            board.BlackPawns = (ulong)Math.Pow(2, startPosition);
-            board.BlackPawns += (ulong)Math.Pow(2, endPosition);
+            Debugging.PrintPieces(pieces);
+            pieces = pieces & ~(ulong)Math.Pow(2, startPosition);
+            pieces = pieces | (ulong)Math.Pow(2, endPosition);
         }
     }
 }

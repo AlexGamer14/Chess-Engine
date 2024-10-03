@@ -7,7 +7,7 @@
         {
             ChessBoard board = new ChessBoard();
 
-            Mover.MovePiece(board, 1, 2);
+            Mover.MovePiece(board.BlackPawns, 14, 63);
 
             Console.WriteLine(HelperFunctions.GetByte(1, board.AllPieces));
 
