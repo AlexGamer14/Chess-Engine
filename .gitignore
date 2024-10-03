@@ -3,7 +3,6 @@
 
 # C# and .NET
 *.csproj
-*.sln
 *.suo
 *.user
 *.userosscache
