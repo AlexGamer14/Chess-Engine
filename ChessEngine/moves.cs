@@ -4,9 +4,8 @@ namespace ChessEngine
     {
         public void MovePiece(ChessBoard board, byte startPosition, byte endPosition)
         {
-            Debugging.PrintPieces(board.BlackPawns);
-            board.BlackPawns -= (ulong)Math.Pow(2, startPosition);
-            board.BlackPawns += (ulong)Math.Pow(2, endPosition);
+            pieces = pieces & ~(ulong)Math.Pow(2, startPosition);
+            pieces = pieces | (ulong)Math.Pow(2, endPosition);
         }
 
         public bool LegalMove(byte pieceType, byte startPosition, byte endPosition)
