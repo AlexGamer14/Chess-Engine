@@ -18,7 +18,7 @@ namespace ChessEngine
                 case 1:
                     break;
             }
-        return false;
+            return false;
 
 
         }
