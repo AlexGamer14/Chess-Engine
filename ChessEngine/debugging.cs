@@ -11,7 +11,7 @@ namespace ChessEngine
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    Console.Write(ChessEngine.GetByte(i + j, pieces));
+                    Console.Write(HelperFunctions.GetByte(i + j, pieces));
                 }
                 Console.WriteLine();
             }

@@ -5,11 +5,7 @@ namespace ChessEngine
         public void MovePiece(ChessBoard board, byte startRow, byte startColumn, byte destinationRow, byte DestinationColumn)
         {
             Debugging.PrintPieces(board.BlackPawns);
-        }
-
-        private byte RowAndColumnToByte(byte row, byte column)
-        {
-            return (byte)(row * 8 + column);
+            Console.WriteLine(HelperFunctions.GetByte(10, board.AllPieces));
         }
     }
 }
